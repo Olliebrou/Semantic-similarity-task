@@ -1,0 +1,18 @@
+Notes on similarities between "cat, monkey, banana":
+
+I found the difference in similarity between monkey + banana and cat + banana quite interesting.
+Spacy determined that a cat and monkey were quite similar (they are both animals) and yet the similarity
+between monkey and banana was also quite high (as monkeys are associated with eating bananas).
+The similarity between cat and banana however was low, but not as low as one might expect.
+It would be hard to draw absolute similarities between a cat and a banana.
+Yet spacy has determined that there must be some.
+
+
+Notes on using "en_core_web_sm" instead of "en_core_web_md" in the examples file:
+
+The sm version does not contain word vectors. So when the code runs with "en_core_web_sm" instead of "en_core_web_md" it throws up the following error: 
+
+"UserWarning: [W007] The model you're using has no word vectors loaded, so the result of the Doc.similarity method will be based on the tagger, parser and NER, which may not give useful similarity judgements. This may happen if you're using one of the small models, e.g. `en_core_web_sm`, which don't ship with word vectors and only use context-sensitive tensors. You can always add your own word vectors, or use one of the larger models instead if available."
+
+The output of each is also different, when using _sm the similarity number is lower than when using _md.
+This shows that word vectors are nessesary to show similarity.
