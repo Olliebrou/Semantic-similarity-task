@@ -8,7 +8,7 @@
 ### Download the Repository
 Click on the "Code" button on this repository and select "Download ZIP". Alternatively, you can clone the repository using Git with the following command:
 
-git clone https://github.com/Olliebrou/semantic.git
+git clone https://github.com/Olliebrou/Semantic-similarity-task.git
 Extract the ZIP file to your desired location.
 
 Open a terminal window and navigate to the directory where you extracted the repository.
@@ -56,6 +56,3 @@ The output of the program should appear in the command terminal
 ## Usage
 The program is intended as a task submission. It will output very simple command line text. To view the code, either view directly on GitHub or open the .py files in an IDE of your choice.
 
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
